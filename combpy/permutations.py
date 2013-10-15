@@ -17,8 +17,7 @@ def derangements(iterable):
     set([(2, 3, 1), (3, 2, 1)])
     """
 
-    size = len(iterable)
-    if size in [0, 1]:
+    if len(iterable) == 1:
         return
 
     for permutation in permutations(iterable):

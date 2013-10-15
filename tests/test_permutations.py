@@ -20,6 +20,8 @@ def test_derangements_of_uniterable_raises():
 def test_derangements_of_underangeable_is_empty():
     assert set(derangements([1])) == set()
 
-def test_derangements_of_empty_is_empty():
-    assert set(derangements([])) == set()
+def test_derangements_of_empty_is_not_empty():
+    # Lists of 0 objects vacuously satisfy the derangement
+    # condition that no object appears in its original position.
+    assert set(derangements([])) == set([()])
 
