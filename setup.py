@@ -1,5 +1,8 @@
+#-*- coding: utf-8 -*-
+
 from distutils.core import setup
 from combpy import get_version
+
 
 setup(
     name='combpy',
@@ -23,3 +26,4 @@ setup(
         'Topic :: Scientific/Engineering :: Mathematics',
     ]
 )
+
