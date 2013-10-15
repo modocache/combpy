@@ -7,4 +7,5 @@ Various combinatorics functions for Python. Not meant for public consumption.
 ## Examples of Availiable Functions
 
 - `combpy.permutations.derangements`: http://mathworld.wolfram.com/Derangement.html
+- `combpy.factorials.subfactorial`: http://mathworld.wolfram.com/Subfactorial.html
 

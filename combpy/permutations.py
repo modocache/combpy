@@ -1,6 +1,10 @@
 #-*- coding: utf-8 -*-
 
+from __future__ import absolute_import
+
 import itertools
+
+from combpy.factorials import subfactorial
 
 
 def permutations(iterable, r = None):
@@ -30,6 +34,10 @@ def derangements(iterable):
 
         if is_derangement:
             yield permutation
+
+
+def number_of_derangements(iterable):
+    return subfactorial(len(iterable))
 
 
 if __name__ == '__main__':
